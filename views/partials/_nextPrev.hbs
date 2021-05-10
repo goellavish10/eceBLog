@@ -1,0 +1,51 @@
+<div class="row" style="margin-bottom: 3rem;">
+    <div class="col s6"><a 
+          href="/?page=${parseInt(currentPage) + 1}" class="btn"> <span>
+            <i class="fas fa-chevron-left"></i> Page 1
+          </span>
+          </a>
+        </div>
+    <div class="col s6 right-align"><a 
+          href="/?page=${parseInt(currentPage) + 1}" class="btn"> <span>
+            Page 2
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          </a></div>
+    
+</div>
+{{!-- 
+<a 
+          href="/?page=${parseInt(currentPage) + 1}" style="margin-bottom: 100px"> <span>
+            Page ${parseInt(currentPage) + 1}
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          </a> --}}
+<script>
+    
+      /*
+      ${parseInt(currentPage) + 1}
+        let page = document.getElementById('pagenum').value;
+    document.getElementById('inc').addEventListener('click', () => {
+        let pageNum = parseInt(page);
+       // pageNum++;
+    })
+    document.getElementById('dec').addEventListener('click', () => {
+        let pageNum = parseInt(page);
+       // pageNum--;
+    }) 
+
+
+    var actOnPost = function (event) {
+            event.preventDefault()
+            let action = event.target.textContent.trim();
+            let pagenumber = document.getElementById('pagenumber').value;
+            axios.post('/', { action: action, num: pagenumber }).then(function(response){
+                let query = response.data.query;
+                console.log(response)
+                if(response.data.redirect == "/"){
+                    window.location = "/?page=" + query;
+                }
+            })
+        };
+    */
+</script>
